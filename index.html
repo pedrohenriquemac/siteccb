@@ -1,19 +1,177 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Site CCB</title>
-        
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
 
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-        <body>
-           <div class="parte1">
-              <header class="cabeçalho">
-                 <img src="logo2.jpg" >
-              </header>
-           </div>
-        </body>
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 18px; /* Aumenta o tamanho das listas */
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s; /* Adiciona transição suave de cor */
+}
+header nav ul li{
+    display: inline;
+    padding: 10px 10px 10px 10px;
+    border-right: 4px solid #000000;
+    margin-left: 10px;
+}
+
+nav ul li a:hover {
+    color: #aa9900; /* Altera a cor ao passar o mouse */
+    
+}
+
+section {
+    padding: 50px;
+}
+.logoccb {
+    width: 12%;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.posHome{
+    margin-right: 30px;
+}
+#slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    float: left;
+    display: none;
+}
+
+.slide img {
+    width: 100%;<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+…    </script>
+</body>
 </html>
+
+    height: auto;
+}
+.Imagem {
+    border-radius: 20px;
+}
+
+
+
+
+
+</style>
+<body>
+    <header>
+        <h1><img src="logoccb.jpg" class="logoccb"></h1>
+        <nav>
+            <ul>
+                <li><a href="#home" class="posHome">Início</a></li>
+                <li><a href="#sobre" class="posHome">Sobre</a></li>
+                <li><a href="#contato" class="posHome">Contato</a></li>
+                <li><a href="#musica" class="posHome">Musica</a></li>
+                <li><a href="#galerias" class="posHome">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="slider">
+        <div class="slide">                         
+            <img src="ccb1.jpg" class="Imagem">
+        </div>
+        <div class="slide">
+            <img src="ccb2.jpg" class="Imagem">
+        </div>
+        <div class="slide">
+            <img src="ccb3.jpg" class="Imagem">
+        </div>
+    </section>
+
+    <section id="additional-images">
+        <!-- As imagens adicionais serão inseridas aqui via JavaScript -->
+    </section>
+
+    <section id="home">
+        <h2>Bem-vindo ao Meu Site!</h2>
+        <p>Esta é a página inicial do meu site.</p>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre</h2>
+        <p>Aqui você pode escrever algo sobre você ou sobre o propósito do site.</p>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Você pode entrar em contato conosco através do seguinte endereço de e-mail: exemplo@email.com.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Meu Site</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let i;
+    const slides = document.getElementsByClassName("slide");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 2000); // Altera a imagem a cada 2 segundos
+}
+
+    </script>
+</body>
+</html>
+
