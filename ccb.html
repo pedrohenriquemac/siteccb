@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Site</title>
-    <link rel="stylesheet" href="styles.css">
+    
 </head>
 <style>
     body {
@@ -12,7 +12,6 @@
     margin: 0;
     padding: 0;
 }
-
 header {
     background-color: #ffffff;
     color: #000000;
@@ -21,19 +20,18 @@ header {
     background-position: center;
     background-size: cover;
     
+    
+    
 }
-
 nav ul {
     list-style-type: none;
     padding: 0;
 }
-
 nav ul li {
     display: inline;
     margin-right: 20px;
     font-size: 18px; /* Aumenta o tamanho das listas */
 }
-
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
@@ -46,19 +44,13 @@ header nav ul li:not(.posHome1)::after {
     margin-left: 10px;
     justify-content: space-between;
 }
-
 nav ul li a:hover {
     color: #aa9900; /* Altera a cor ao passar o mouse */
     
 }
-
 section {
     padding: 50px;
 }
-.logoccb {
-    width: 12%;
-}
-
 footer {
     background-color: #333;
     color: #fff;
@@ -67,48 +59,30 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
 .posHome{
     margin-right: 30px;
 }
-#slider {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.slide {
-    float: left;
-    display: none;
-    width: 40%;
-}
-
-.slide img {
-    width: 100%;
-
-
-    height: auto;
-}
 .Imagem {
     border-radius: 20px;
+    width: 40%;
 }
 .inicio {
-    margin: 150px;
+    margin: 30px;
 }
-.text {
-    width: 60%;
-    position: relative;
-    margin: 5px 0 10px 0;
-    padding-right: 10px;
-    margin-left: 20px;
-    justify-content: flex-end;
-    
+.image1 {
+    width: 100%;
+}
+.corderinho {
+    width: 100%;
+}
+.logo {
+    width: 40%;
 }
 </style>
 <body>
     <header style="background-image: url(bannerccb.jpg);">
         <section class="inicio">
-            <h1></h1>
+            <img src="logo.png" class="logo">
         </section>
         <nav>
             <ul>
@@ -122,30 +96,12 @@ footer {
     </header>
 
     
-    <section id="slider">
-        <div class="slide">                         
-            <img src="ccb1.jpg" class="Imagem">
-        </div>
-        <div class="slide">
-            <img src="ccb2.jpg" class="Imagem">
-        </div>
-        <div class="slide">
-            <img src="ccb3.jpg" class="Imagem">
-        </div>
-        <!--divisao texto e imagem-->
-        <div class="text">
-            <h1>O que é a CCB?</h1>
-            <p>A CCB (Congregação Cristã no Brasil) é uma denominação religiosa cristã 
-               que surgiu no Brasil no início do século XX.
-               É conhecida por sua ênfase na simplicidade dos cultos e na
-               prática do batismo por imersão e do culto sem liturgia preestabelecida.</p>
-
-        </div>
+    <section class="etapa1">
+        <div class="image1">                         
+           <img src="oqccb.jpg" class="corderinho">
     </section>
 
-    <section id="additional-images">
-        <!-- As imagens adicionais serão inseridas aqui via JavaScript -->
-    </section>
+ 
 
     <section id="home">
         <h2>Bem-vindo ao Meu Site!</h2>
