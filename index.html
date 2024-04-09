@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Site</title>
-    <link rel="stylesheet" href="styles.css">
+    
 </head>
 <style>
     body {
@@ -12,7 +12,6 @@
     margin: 0;
     padding: 0;
 }
-
 header {
     background-color: #ffffff;
     color: #000000;
@@ -21,144 +20,225 @@ header {
     background-position: center;
     background-size: cover;
     
+    
+    
 }
-
 nav ul {
     list-style-type: none;
     padding: 0;
 }
-
 nav ul li {
     display: inline;
     margin-right: 20px;
     font-size: 18px; /* Aumenta o tamanho das listas */
 }
-
 nav ul li a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     transition: color 0.3s; /* Adiciona transição suave de cor */
 }
-header nav ul li{
+header nav ul li:not(.posHome1)::after {
     display: inline;
     padding: 10px 10px 10px 10px;
-    border-right: 4px solid #000000;
+    border-right: 4px solid #ffffff;
     margin-left: 10px;
+    justify-content: space-between;
 }
-
 nav ul li a:hover {
     color: #aa9900; /* Altera a cor ao passar o mouse */
     
+    
 }
-
 section {
     padding: 50px;
 }
-.logoccb {
-    width: 12%;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
 .posHome{
     margin-right: 30px;
 }
-#slider {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.slide {
-    float: left;
-    display: none;
-}
-
-.slide img {
-    width: 100%;
-
-
-    height: auto;
-}
 .Imagem {
     border-radius: 20px;
+    width: 40%;
 }
+.inicio {
+    margin: 30px;
+}
+.image1 {
+    width: 100%;
+}
+.corderinho {
+    width: 100%;
+}
+.logo {
+    width: 40%;
+}
+.videoccb {
+    width: 100%;
+}
+.home {
+    text-align: center;
+    background-color: #6b6b6b33;
+}
+.home h2 {
+    color: rgba(7, 7, 102, 0.918);
+
+}
+.home p:hover {
+    color: #1100aa;
+}
+.sobre {
+    text-align: center;
+}
+.cltofc {
+    font-size: 40px;
+}
+.container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      width: 300px;
+      margin: 0 10px; 
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .card-image {
+      width: 100%;
+      height: 200px;
+      background-image: url('ytccb.jpg');
+      background-size: cover;
+    }
+    .card-content {
+      padding: 20px;
+    }
+    .card-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .card-description {
+      font-size: 16px;
+      color: #555;
+    }
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .card:hover .card-image {
+      filter: brightness(0.8);
+    }
+    footer {
+      background-color: #cfc2ff;
+      color: #272727;
+      padding: 20px 0;
+      text-align: center;
+      bottom: 0;
+      width: 100%;
+      border-top: 10px solid #000;
+    }
+
+    footer img {
+      width: 50px;
+      height: auto;
+      vertical-align: middle;
+    }
+
+    footer p {
+      margin: 0;
+    }
+    .ovelha {
+        width: 15%;
+    }
 </style>
 <body>
     <header style="background-image: url(bannerccb.jpg);">
-        <h1><img src="logoccb.jpg" class="logoccb"></h1>
+        <section class="inicio">
+            <img src="logo.png" class="logo">
+        </section>
         <nav>
             <ul>
                 <li><a href="#home" class="posHome">Início</a></li>
                 <li><a href="#sobre" class="posHome">Sobre</a></li>
                 <li><a href="#contato" class="posHome">Contato</a></li>
                 <li><a href="#musica" class="posHome">Musica</a></li>
-                <li><a href="#galerias" class="posHome">Galeria</a></li>
+                <li><a href="#galerias" class="posHome1">Galeria</a></li>
             </ul>
         </nav>
     </header>
 
     
-    <section id="slider">
-        <div class="slide">                         
-            <img src="ccb1.jpg" class="Imagem">
-        </div>
-        <div class="slide">
-            <img src="ccb2.jpg" class="Imagem">
-        </div>
-        <div class="slide">
-            <img src="ccb3.jpg" class="Imagem">
-        </div>
+    <section class="etapa1">
+        <div class="image1">                         
+           <img src="oqccb.jpg" class="corderinho">
+          
+    </section>
+    <video src="ccb.mp4" autoplay loop muted class="videoccb"></video>
+
+    <section class="home">
+        <h2>QUEM SOMOS?</h2>
+        <p>A CONGREGAÇÃO CRISTÃ é uma comunidade religiosa inteiramente fundamentada na doutrina e Fé apostólicas contidas no Novo Testamento da Bíblia Sagrada.
+
+            A CONGREGAÇÃO CRISTÃ tem origem num pequeno grupo de evangélicos italianos que, na cidade de Chicago nos Estados Unidos da América, no ano de 1904, passou a se reunir em suas casas, buscando a guia Divina para seguir os ensinamentos bíblicos cristãos, dentro da simplicidade da Fé apostólica.
+            
+            A esse grupo, desprovido de qualquer denominação e sem qualquer propaganda ou forma especial de comunicação, foram se agregando muitas outras pessoas, sentindo-se movidas por Deus. Dessa mesma maneira, se formaram em diversos países grupos imbuídos dos mesmos sentimentos e compreensão da Palavra de Deus.
+            
+            Com o aumento do número de pessoas professando os mesmos princípios de adoração a Deus e não havendo locais particulares em que fosse possível reunir-se foi necessário adquirir-se locais para esse fim, havendo, a partir de então, a necessidade de se criar instituição com personalidade jurídica para poder legalizar as reuniões e titularizar a propriedade desses imóveis e, por isso, se denominou essa entidade de "CONGREGAÇÃO CRISTÃ", isto é, simples reunião de pessoas, sem qualquer formalismo ou personalismo, apenas imbuídas dos mesmos valores espirituais cristãos de adoração a Deus.
+            
+            As receitas advindas de seus membros devem decorrer de ofertas voluntárias e anônimas, cujos valores devem ser aplicados integralmente nas finalidades para as quais foram oferecidas, sendo vedado qualquer caráter de obrigatoriedade de sua prestação ou vínculo com a integração ou permanência de membros.
+            
+            O exercente de qualquer cargo espiritual ou de administração deverá manter-se através de seu trabalho ou meios próprios, uma vez que é vedada qualquer espécie de remuneração ou retribuição pelo exercício dessas atividades ou pela ministração de serviços espirituais ou sacramentos.
+            
+            A CONGREGAÇÃO CRISTÃ não tem qualquer vínculo com partidos ou ideologias políticas e os integrantes de cargos espirituais, ou de administração, devem se abster de aceitar cargos ou encargos políticos, sendo incompatível o exercício concomitante de funções em ambas as esferas (cargo ou encargo político e função espiritual ou administrativa na igreja). Recomenda-se aos membros cumprir os deveres cívicos de cidadãos, consoante as leis do país.
+            
+            Também é vedado aos membros, integrantes do Ministério e da Administração utilizar-se do nome da CONGREGAÇÃO CRISTÃ para fins políticos, eleitorais ou ideológicos.
+            
+            A CONGREGAÇÃO CRISTÃ não mantém polêmicas sobre os seus pontos de doutrina ou seu modo de organização, nem autoriza ninguém a fazê-lo em seu nome.
+            
+            Os integrantes do Ministério (Anciães, Diáconos e Cooperadores) e da Administração da CONGREGAÇÃO CRISTÃ não mantém "site" ou qualquer outro tipo de comunicação objetivando atendimento de questões espirituais ou mesmo esclarecimentos de pontos de doutrina ou princípios de Fé.
+            
+            A CONGREGAÇÃO CRISTÃ não faz qualquer tipo de propaganda de sua doutrina, nem se utiliza de qualquer meio de divulgação pública de seus princípios de fé. Quem tiver interesse espiritual de conhecer sua doutrina deverá freqüentar seus cultos em qualquer de suas igrejas.
+            
+            A CONGREGAÇÃO CRISTÃ NO BRASIL</p>
     </section>
 
-    <section id="additional-images">
-        <!-- As imagens adicionais serão inseridas aqui via JavaScript -->
-    </section>
-
-    <section id="home">
-        <h2>Bem-vindo ao Meu Site!</h2>
-        <p>Esta é a página inicial do meu site.</p>
-    </section>
-
-    <section id="sobre">
-        <h2>Sobre</h2>
-        <p>Aqui você pode escrever algo sobre você ou sobre o propósito do site.</p>
-    </section>
-
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Você pode entrar em contato conosco através do seguinte endereço de e-mail: exemplo@email.com.</p>
+    <section class="sobre">
+        <h2 class="cltofc">Cultos Online</h2>
+        
+        <a href="https://www.youtube.com/c/congregacaocristanobrasil" class="card-link">
+        <div class="container">
+            <div class="card">
+              <div class="card-image"></div>
+              <div class="card-content">
+                <h2 class="card-title">Canal Principal</h2>
+                <p class="card-description">Canal Principal para transmissões no Youtube. </p>
+              </div>
+            </div>
+        </a>
+        <a href="https://www.youtube.com/channel/UCosHvNBlQ9tuSgnaHkFZTJQ" class="card-link">
+         <div class="card">
+            <div class="card-image"></div>
+            <div class="card-content">
+              <h2 class="card-title">Canal Secundario</h2>
+              <p class="card-description">Canal secundario para transmissões no Youtube.</p>
+            </div>
+         </a>
+         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Meu Site</p>
-    </footer>
-
-    <script>
-        let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    let i;
-    const slides = document.getElementsByClassName("slide");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    slides[slideIndex-1].style.display = "block";  
-    setTimeout(showSlides, 2000); // Altera a imagem a cada 2 segundos
-}
-
-    </script>
+        <div>
+          <img src="logoccb.png" class="ovelha">
+          <p>Direitos autorais &copy; 2024. Todos os direitos reservados.</p>
+        </div>
+      </footer>
 </body>
 </html>
+
+
 
