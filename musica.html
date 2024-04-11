@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musica</title>
+    
+</head>
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    
+    
+    
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 18px; 
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s; 
+}
+header nav ul li:not(.posHome1)::after {
+    display: inline;
+    padding: 10px 10px 10px 10px;
+    border-right: 4px solid #ffffff;
+    margin-left: 10px;
+    justify-content: space-between;
+}
+nav ul li a:hover {
+    color: #aa9900; 
+}
+.musisic {
+    width: 100%;
+}
+.music {
+    width: 100%;
+}
+.corderinho {
+    width: 100%;
+}
+.content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+ .box {
+            background-color: #c9bef3;
+            width: 80%; 
+            height: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+.box p {
+    font-size: 19px;
+    font-weight: bold;
+}
+.instrumentos h2 {
+    font-size: 40px;
+    text-align: center;
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: calc(20% - 20px);
+    margin: 10px;
+    background-color: #d8daff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .card-content {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: #333;
+    text-align: center;
+  }
+</style>
+<body>
+    <header style="background-image: url(bannerccb.jpg);">
+        
+        <nav>
+            <ul>
+                <li><a href="index.html" class="posHome">Início</a></li>
+                <li><a href="sobrenos.html" class="posHome">Sobre</a></li>
+                <li><a href="contato.html" class="posHome">Contato</a></li>
+                <li><a href="musica.html" class="posHome">Musica</a></li>
+                <li><a href="galeria.html" class="posHome1">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="musisic">
+    <div class="music">
+          <img src="music.jpg" class="corderinho">
+    </div>
+    </section>
+
+    <div class="content">
+        <div class="box">
+           <p>
+            Na Congregação Cristã no Brasil (CCB), a música desempenha um papel central nos cultos e na vida espiritual dos membros. A CCB é uma denominação cristã protestante com origem no Brasil, conhecida por suas práticas conservadoras e seu estilo de culto caracterizado pela ausência de instrumentos musicais. A música na CCB é predominantemente a capela, o que significa que é cantada sem o acompanhamento de instrumentos musicais.</p>
+            <p>As músicas na CCB são chamadas de "hinos" e são selecionadas de um hinário oficial. Estes hinos são compostos por letras que enfatizam temas como louvor a Deus, adoração, salvação, arrependimento e esperança na vida eterna. Muitos dos hinos são compostos em forma de poesia e são conhecidos por suas letras profundas e significativas.</p>
+            <p>A música na CCB não é apenas uma parte dos cultos, mas também uma expressão da fé e da identidade cultural dos membros. Os hinos são valorizados como uma forma de conexão com Deus e como uma maneira de transmitir e preservar as tradições da denominação.</p>
+        </div>
+
+    </div>
+
+    <section class="instrumentos">
+        <h2>Tipos de instrumentos tocados</h2>
+        <div class="container">
+            <div class="card">
+              <img src="violino.jpg" alt="Imagem 1">
+              <div class="card-content">
+                <h3 class="card-title">Cordas</h3>
+                
+              </div>
+            </div>
+          
+            <div class="card">
+              <img src="saxofone.jpg" alt="Imagem 2">
+              <div class="card-content">
+                <h3 class="card-title">Madeiras</h3>
+               
+               
+              </div>
+            </div>
+          
+            <div class="card">
+              <img src="trompete.jpg" alt="Imagem 3">
+              <div class="card-content">
+                <h3 class="card-title">Metais</h3>
+               
+               
+              </div>
+            </div>
+    </section>
+</body>
+</html>
