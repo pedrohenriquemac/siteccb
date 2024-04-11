@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galeria CCB</title>
+<style>
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-position: center;
+    text-align: center;
+    margin-left: 50%;
+  }
+
+  .carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+    
+  }
+
+  .carousel-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+  .foto {
+    width: 50%;
+    background-position: center;
+  }
+  .Image1 {
+    width: 80%;
+  }
+  
+  header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    
+    
+    
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 18px; /* Aumenta o tamanho das listas */
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s; /* Adiciona transição suave de cor */
+}
+header nav ul li:not(.posHome1)::after {
+    display: inline;
+    padding: 10px 10px 10px 10px;
+    border-right: 4px solid #ffffff;
+    margin-left: 10px;
+    justify-content: space-between;
+}
+nav ul li a:hover {
+    color: #aa9900; /* Altera a cor ao passar o mouse */
+    
+    
+}
+</style>
+</head>
+<body>
+  <header style="background-image: url(bannerccb.jpg);">
+    <section class="inicio">
+      
+    </section>
+    <nav>
+        <ul>
+            <li><a href="ccb.html" class="posHome">Início</a></li>
+            <li><a href="#sobre" class="posHome">Sobre</a></li>
+            <li><a href="#contato" class="posHome">Contato</a></li>
+            <li><a href="#musica" class="posHome">Musica</a></li>
+            <li><a href="galeria.html" class="posHome1">Galeria</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="foto">
+<div class="carousel-container">
+  <div class="carousel-slide">
+    <img class="carousel-image" src="imagem1.jpg" class="Image1">
+    <img class="carousel-image" src="imagem2.jpg" class="Image2">
+    <img class="carousel-image" src="imagem3.jpg" class="Image3">
+    <img class="carousel-image" src="imagem4.jpg" class="Image4">
+    <img class="carousel-image" src="imagem5.jpg" class="Image5">
+    <img class="carousel-image" src="imagem6.jpg" class="Image6">
+    <img class="carousel-image" src="imagem7.jpg" class="Image7">
+    <img class="carousel-image" src="imagem8.jpg" class="Image8">
+    <img class="carousel-image" src="imagem9.jpg" class="Image9">
+    <img class="carousel-image" src="imagem10.jpg" class="Image10">
+    <img class="carousel-image" src="imagem11.jpg" class="Image11">
+  
+    <img class="carousel-image" src="ccb2.jpg" alt="Image 13">
+    <img class="carousel-image" src="ccb3.jpg" alt="Image 14">
+    
+   
+    <!-- Adicione mais imagens conforme necessário -->
+  </div>
+  <button class="carousel-button prev" onclick="prevSlide()">Anterior</button>
+  <button class="carousel-button next" onclick="nextSlide()">Próximo</button>
+</div>
+</section>
+<script>
+  let slideIndex = 0;
+  const slides = document.querySelectorAll('.carousel-image');
+
+  function showSlides() {
+    slides.forEach(slide => {
+      slide.style.display = 'none';
+    });
+    slides[slideIndex].style.display = 'block';
+  }
+
+  function nextSlide() {
+    slideIndex++;
+    if (slideIndex >= slides.length) {
+      slideIndex = 0;
+    }
+    showSlides();
+  }
+
+  function prevSlide() {
+    slideIndex--;
+    if (slideIndex < 0) {
+      slideIndex = slides.length - 1;
+    }
+    showSlides();
+  }
+
+  showSlides();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    
+</head>
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    
+    
+    
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 18px; /* Aumenta o tamanho das listas */
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s; /* Adiciona transição suave de cor */
+}
+header nav ul li:not(.posHome1)::after {
+    display: inline;
+    padding: 10px 10px 10px 10px;
+    border-right: 4px solid #ffffff;
+    margin-left: 10px;
+    justify-content: space-between;
+}
+nav ul li a:hover {
+    color: #aa9900; /* Altera a cor ao passar o mouse */
+}
+header h1 {
+    font-size: 60px;
+    color: #ffffff;
+}
+
+    
+
+.nossamissao{
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    background-color: #ffffff;
+}
+.corderinho {
+    width: 80%;
+}
+.nossamissao h2 {
+   color: #000000;
+}
+.nossamissao p {
+    color: rgb(73, 72, 71);
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: calc(20% - 20px);
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .card-content {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: #333;
+  }
+
+  .card-text {
+    font-size: 14px;
+    color: #666;
+  }
+</style>
+<body>
+    <header style="background-image: url(bannerccb.jpg);">
+        
+        <nav>
+            <ul>
+                <li><a href="" class="posHome">Início</a></li>
+                <li><a href="#sobre" class="posHome">Sobre</a></li>
+                <li><a href="#contato" class="posHome">Contato</a></li>
+                <li><a href="#musica" class="posHome">Musica</a></li>
+                <li><a href="galeria.html" class="posHome1">Galeria</a></li>
+            </ul>
+        </nav>
+
+        <section class="inicio">
+            <h1>Sobre Nos</h1>
+        </section>
+    </header>
+
+    
+     <div class="nossamissao">
+        <h2>"Nosso objetivo como igreja é viver como um corpo unido em Cristo, buscando cumprir a Grande Comissão,
+         amar e cuidar uns dos outros como família de Deus, e viver em santidade e serviço, seguindo o exemplo de Jesus."</h2>
+        <p> "Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai
+             e do Filho e do Espírito Santo." (Mateus 28:19)</p>
+     </div>
+
+     <div class="container">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" alt="Imagem 1">
+          <div class="card-content">
+            <h3 class="card-title">Título do Card 1</h3>
+            <p class="card-text">Conteúdo do Card 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="https://via.placeholder.com/300" alt="Imagem 2">
+          <div class="card-content">
+            <h3 class="card-title">Título do Card 2</h3>
+            <p class="card-text">Conteúdo do Card 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="https://via.placeholder.com/300" alt="Imagem 3">
+          <div class="card-content">
+            <h3 class="card-title">Título do Card 3</h3>
+            <p class="card-text">Conteúdo do Card 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="https://via.placeholder.com/300" alt="Imagem 4">
+          <div class="card-content">
+            <h3 class="card-title">Título do Card 4</h3>
+            <p class="card-text">Conteúdo do Card 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="https://via.placeholder.com/300" alt="Imagem 5">
+          <div class="card-content">
+            <h3 class="card-title">Título do Card 5</h3>
+            <p class="card-text">Conteúdo do Card 5. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+   
+</body>
